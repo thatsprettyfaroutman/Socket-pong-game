@@ -9,9 +9,8 @@
   ================================================== -->
 	<meta charset="utf-8">
 	<title>GAME</title>
-	<meta name="description" content="Skeleton: Beautiful Boilerplate for Responsive, Mobile-Friendly Development">
-	<meta name="author" content="Dave Gamache">
-	<meta property="twitter:account_id" content="17346623" />
+	<meta name="description" content="eee">
+	<meta name="author" content="Derp">
 	
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
