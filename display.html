@@ -11,7 +11,7 @@
 	<title>GAME</title>
 	<meta name="description" content="eee">
 	<meta name="author" content="Derp">
-	
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -152,10 +152,6 @@
 </head>
 <body>
 
-<?php // DISPLAY
-	if (isset($_GET['display'])):
-?>
-	
 	<div id="data"></div>
 
 	<div class="field display">
@@ -171,25 +167,9 @@
 	</div>
 
 	<script type="text/javascript">
-		var _display = true; 
+		var _display = true;
 	</script>
 
-<?php else: // CLIENT ?>
-
-	<div class="field">
-		<div class="top"></div>
-		<div class="status"></div>
-	</div>
-
-	<!-- <div id="alpha">a</div>
-	<div id="beta">b</div>
-	<div id="gamma">g</div> -->
-
-	<script type="text/javascript">
-		var _display = false; 
-	</script>
-
-<?php endif; ?>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>

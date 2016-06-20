@@ -1,13 +1,20 @@
-Crappy socket based pong game demo
+### Crappy socket based pong game demo
 
-1. Run node/server.js // Requires node pacakge websocket
+#### Installation
+```git clone```
+```npm install```
+Change the line 116 in `main.js` to match your server (will maybe fix this later)
 
-2. Connect devices
-	* Device 1. http://url?display == Actual game, display
-	* Device 2. http://url == Player one
-	* Device 3. http://url == Player two
-	
-3. Play
+#### Running
+```node node/server.js``` (server, sockets)
+```live-server``` (clients use this for now)
 
-Point is to show the game on TV or other monitor and then connect to the game with phones and using touchscreens as controllers.
+#### Playing
+The game is pong.
 
+You need 3 browsers or devices to play.
+1 for displaying the field. 2 for controlling the paddles.
+
+First device should be the display. This could be the machine thats running the servers for example. Connect it to `http:/<server address>/display.html` or localhost or something.
+
+Connect the other devices (clients), phones preferably, to `http:/<server address>/` and they will act as paddles.

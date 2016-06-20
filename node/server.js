@@ -15,7 +15,7 @@ wsServer = new WebSocketServer({
 });
 
 
-var 
+var
 	display = null,
 	playerA = null,
 	playerB = null,
@@ -24,14 +24,14 @@ var
 
 // WebSocket server
 wsServer.on('request', function(request) {
-	var 
+	var
 		connection = request.accept(null, request.origin);
-	
+
 
 	// This is the most important callback for us, we'll handle
 	// all messages from users here.
 	connection.on('message', function(message) {
-		var 
+		var
 			data, d;
 
 		if (message.type === 'utf8') {

@@ -11,7 +11,7 @@ $(function () {
 		mx = $(window).width() / 1920, // multiplier X
 		my = $(window).height() / 1080, // multiplier Y
 
-		bounds = { 
+		bounds = {
 			left : w * 0.07 + 7.5,
 			right : w * 0.93 - 7.5
 		},
@@ -55,7 +55,7 @@ $(function () {
 		ph = $('.paddle').first().height();
 		mx = $(window).width() / 1920; // multiplier X
 		my = $(window).height() / 1080; // multiplier Y
-		bounds = { 
+		bounds = {
 			left : w * 0.07 + 7.5,
 			right : w * 0.93 - 7.5
 		};
@@ -89,7 +89,7 @@ $(function () {
 	// console.log(window);
 
 
-	var 
+	var
 		curPos = 0,
 		lastPos = 0;
 
@@ -113,7 +113,7 @@ $(function () {
 	// if user is running mozilla then use it's built-in WebSocket
 	window.WebSocket = window.WebSocket || window.MozWebSocket;
 
-	var connection = new WebSocket('ws://192.168.1.38:1337');
+	var connection = new WebSocket('ws://192.168.0.108:1337');
 	// var connection = new WebSocket('ws://pi/game/:1337');
 
 	connection.onopen = function () {
@@ -132,7 +132,7 @@ $(function () {
 	};
 
 	connection.onmessage = function (message) {
-		var 
+		var
 			data = message.data,
 			d = data.split('|'),
 			pid = -1,
@@ -175,7 +175,7 @@ $(function () {
 		// 	return;
 		// }
 		// handle incoming message
-		
+
 	};
 
 
@@ -275,7 +275,7 @@ $(function () {
 
 		pleft.scoreDom.html(0);
 		pright.scoreDom.html(0);
-		
+
 		$('.status').first().html(winText);
 
 		setTimeout(function () {

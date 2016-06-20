@@ -1,0 +1,24 @@
+{
+  "name": "socket-pong-games",
+  "version": "1.0.0",
+  "description": "Crappy socket based pong game demo",
+  "main": "index.js",
+  "dependencies": {
+    "http": "^0.0.0",
+    "websocket": "^1.0.23"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatsprettyfaroutman/Socket-pong-game.git"
+  },
+  "author": "= <=>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thatsprettyfaroutman/Socket-pong-game/issues"
+  },
+  "homepage": "https://github.com/thatsprettyfaroutman/Socket-pong-game#readme"
+}
