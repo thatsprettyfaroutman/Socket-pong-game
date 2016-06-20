@@ -2,11 +2,14 @@
 
 #### Installation
 ```git clone```
+
 ```npm install```
+
 Change the line 116 in `main.js` to match your server (will maybe fix this later)
 
 #### Running
 ```node node/server.js``` (server, sockets)
+
 ```live-server``` (clients use this for now)
 
 #### Playing
